@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evez-debate-framework"
+version = "0.1.0"
+description = "Three-voice swarm decision engine for the EVEZ-OS mesh"
+requires-python = ">=3.9"
+
+[project.scripts]
+evez-debate = "evez_debate_framework.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
